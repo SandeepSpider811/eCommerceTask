@@ -1,0 +1,6 @@
+framework module Pods_eCommerceAppTask {
+  umbrella header "Pods-eCommerceAppTask-umbrella.h"
+
+  export *
+  module * { export * }
+}

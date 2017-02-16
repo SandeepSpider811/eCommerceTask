@@ -1,0 +1,695 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0CBE91FA8EA15817259D5DD3C7F1393D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		0D50FD5AD018C87342F453178959C322 /* ic_cross_white@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 564CBC2CBC1D83C2F1DB455E87190DF6 /* ic_cross_white@3x.png */; };
+		185682DEDD998107C6DE8A01390C9D2F /* UIImageView+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAEDD19B5C9A847985F6A33DAE65214 /* UIImageView+Tools.swift */; };
+		28B67525A2F2A4C21575B04F79E6FB1D /* ImageSlideshow-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A87D1CC7B1D704DF37BBC7B1D1D17F6 /* ImageSlideshow-dummy.m */; };
+		340A2E53268508AFD17E72150E6B6BE4 /* ZoomAnimatedTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF4547F76ECC8D3B869CF5427EAA5C5 /* ZoomAnimatedTransitioning.swift */; };
+		69611F626982620647F6D89534D158DB /* ImageSlideshow.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0521ADF65FE4D76F34E98B43D8D1EA86 /* ImageSlideshow.bundle */; };
+		6DA0405D7E26FA7ADCAC616A7F1BBA1B /* ic_cross_white@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E62EE8AB15B8D7DCB5A59F39994C328 /* ic_cross_white@2x.png */; };
+		7064C2B84F2D0B40A9EEA1D60BBF93E9 /* FullScreenSlideshowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A68D3960E598E613E2B38F75D4DEF6 /* FullScreenSlideshowViewController.swift */; };
+		71361B18209728A71432598887137B7B /* InputSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6395F3C2ABD45C11C139871AE5FA313C /* InputSource.swift */; };
+		74FCD2CD233562CA059B4F591B495301 /* ImageSlideshowItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9A9F188547B8FD02C6A2B3DD985C9C /* ImageSlideshowItem.swift */; };
+		80E38AAAA106C699C420F55F0DD8B6A4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		9B2117AED969D6AB2F0E1D8552D9AC83 /* ImageSlideshow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D36540E789FAD65FFC19D375E3AAE7 /* ImageSlideshow.swift */; };
+		B5BB9F1AA7ABD290269FEC44B10BE3C0 /* ImageSlideshow-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A7B2A1B26EB5F6E4800F49A09D96C93E /* ImageSlideshow-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CECBA7967B09A99DEB9E82613275D006 /* Pods-eCommerceAppTask-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 367E2D06D4D6829DD69B5B42DA6DC353 /* Pods-eCommerceAppTask-dummy.m */; };
+		D8E74FCCC5C1334FA29AFC4A232CFDF8 /* Pods-eCommerceAppTask-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F795F1AB2DB918A883DA94952FE7129A /* Pods-eCommerceAppTask-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E6FDED715B0F327DA62EC59EF9AA5AC8 /* UIImage+AspectFit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C4EABC63A79ECA9DE81B06B88FEBF7 /* UIImage+AspectFit.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C49D297BD1ED40C8D7C9756647854110 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F1883A945C236CDCF166DE672D76F89C;
+			remoteInfo = ImageSlideshow;
+		};
+		DA03B31FC8F77AA83D5303A424DB4870 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 854A358F694791FC141F75E15F82BB64;
+			remoteInfo = "ImageSlideshow-ImageSlideshow";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0521ADF65FE4D76F34E98B43D8D1EA86 /* ImageSlideshow.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = ImageSlideshow.bundle; path = ImageSlideshow.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		19C1E9C4442E0545629F747D0DFC2484 /* Pods-eCommerceAppTask-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-eCommerceAppTask-frameworks.sh"; sourceTree = "<group>"; };
+		1FD4F9C117236CDF5143AF6D92F4B952 /* Pods-eCommerceAppTask-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-eCommerceAppTask-resources.sh"; sourceTree = "<group>"; };
+		2E62EE8AB15B8D7DCB5A59F39994C328 /* ic_cross_white@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; name = "ic_cross_white@2x.png"; path = "ImageSlideshow/Assets/ic_cross_white@2x.png"; sourceTree = "<group>"; };
+		367E2D06D4D6829DD69B5B42DA6DC353 /* Pods-eCommerceAppTask-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-eCommerceAppTask-dummy.m"; sourceTree = "<group>"; };
+		42336ADCA5B20A20700F9EDF4C4E728D /* Pods-eCommerceAppTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-eCommerceAppTask.debug.xcconfig"; sourceTree = "<group>"; };
+		44E244123BCC9FA68B183F3EAD901BCD /* ImageSlideshow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ImageSlideshow.framework; path = ImageSlideshow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CE3C546248F10D88C3AC61AC9706304 /* ResourceBundle-ImageSlideshow-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-ImageSlideshow-Info.plist"; sourceTree = "<group>"; };
+		51F3C8B8C642868A0F83A4F5DC5C677B /* ImageSlideshow-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ImageSlideshow-prefix.pch"; sourceTree = "<group>"; };
+		564CBC2CBC1D83C2F1DB455E87190DF6 /* ic_cross_white@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; name = "ic_cross_white@3x.png"; path = "ImageSlideshow/Assets/ic_cross_white@3x.png"; sourceTree = "<group>"; };
+		6395F3C2ABD45C11C139871AE5FA313C /* InputSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InputSource.swift; path = ImageSlideshow/Classes/Core/InputSource.swift; sourceTree = "<group>"; };
+		6A87D1CC7B1D704DF37BBC7B1D1D17F6 /* ImageSlideshow-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ImageSlideshow-dummy.m"; sourceTree = "<group>"; };
+		6F179973B7561A953F67EC1562A60E27 /* Pods-eCommerceAppTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-eCommerceAppTask.release.xcconfig"; sourceTree = "<group>"; };
+		71C4EABC63A79ECA9DE81B06B88FEBF7 /* UIImage+AspectFit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+AspectFit.swift"; path = "ImageSlideshow/Classes/Core/UIImage+AspectFit.swift"; sourceTree = "<group>"; };
+		775C7113506171EB7776AE4EB8717DC6 /* Pods-eCommerceAppTask-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-eCommerceAppTask-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7B590B9C058BAB259BF889296EE1D4B9 /* Pods-eCommerceAppTask-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-eCommerceAppTask-acknowledgements.plist"; sourceTree = "<group>"; };
+		7DA12554B628246D1091D30EC9C5C301 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9532083CE591AC110F9A88A7AA8EDFD2 /* ImageSlideshow.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ImageSlideshow.xcconfig; sourceTree = "<group>"; };
+		9B9A9F188547B8FD02C6A2B3DD985C9C /* ImageSlideshowItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageSlideshowItem.swift; path = ImageSlideshow/Classes/Core/ImageSlideshowItem.swift; sourceTree = "<group>"; };
+		A0D36540E789FAD65FFC19D375E3AAE7 /* ImageSlideshow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageSlideshow.swift; path = ImageSlideshow/Classes/Core/ImageSlideshow.swift; sourceTree = "<group>"; };
+		A2E9137B41D4B44B3FA5B0A2F4F33E5C /* Pods-eCommerceAppTask.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-eCommerceAppTask.modulemap"; sourceTree = "<group>"; };
+		A4A68D3960E598E613E2B38F75D4DEF6 /* FullScreenSlideshowViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FullScreenSlideshowViewController.swift; path = ImageSlideshow/Classes/Core/FullScreenSlideshowViewController.swift; sourceTree = "<group>"; };
+		A7B2A1B26EB5F6E4800F49A09D96C93E /* ImageSlideshow-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ImageSlideshow-umbrella.h"; sourceTree = "<group>"; };
+		BFF4547F76ECC8D3B869CF5427EAA5C5 /* ZoomAnimatedTransitioning.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZoomAnimatedTransitioning.swift; path = ImageSlideshow/Classes/Core/ZoomAnimatedTransitioning.swift; sourceTree = "<group>"; };
+		C35A854728A76448F177E110C991B78E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C8B03054C808E6C76DC93C7C0D925873 /* ImageSlideshow.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = ImageSlideshow.modulemap; sourceTree = "<group>"; };
+		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D5EA00B67A17DF9106E5C8E442B17AFB /* Pods_eCommerceAppTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_eCommerceAppTask.framework; path = "Pods-eCommerceAppTask.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCAEDD19B5C9A847985F6A33DAE65214 /* UIImageView+Tools.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImageView+Tools.swift"; path = "ImageSlideshow/Classes/Core/UIImageView+Tools.swift"; sourceTree = "<group>"; };
+		F795F1AB2DB918A883DA94952FE7129A /* Pods-eCommerceAppTask-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-eCommerceAppTask-umbrella.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2F28672F6B549D341884090380AEE08C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CBE91FA8EA15817259D5DD3C7F1393D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DBBCB869F090D7719B7BFE835D8E2D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEBFCF12E9E2C6B1B6034D71FF82736B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80E38AAAA106C699C420F55F0DD8B6A4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		192A7C8AEA91BE3D42D203ED4EAB185D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2E62EE8AB15B8D7DCB5A59F39994C328 /* ic_cross_white@2x.png */,
+				564CBC2CBC1D83C2F1DB455E87190DF6 /* ic_cross_white@3x.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		7289C088975EC48BC92B9C8925A8A780 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B8761A95E23A97E20B435EE5C40C43E3 /* Pods-eCommerceAppTask */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				812D95CEC520CDFC2E01BF0B8119E985 /* Pods */,
+				AD8973E9992D6A24A8ECFC0F79DAA7D9 /* Products */,
+				7289C088975EC48BC92B9C8925A8A780 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		812D95CEC520CDFC2E01BF0B8119E985 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C64CB267B14EB5AC48CBC52A1BDB477F /* ImageSlideshow */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		831E8DD93EE00C166081CE194E903ACB /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				A4A68D3960E598E613E2B38F75D4DEF6 /* FullScreenSlideshowViewController.swift */,
+				A0D36540E789FAD65FFC19D375E3AAE7 /* ImageSlideshow.swift */,
+				9B9A9F188547B8FD02C6A2B3DD985C9C /* ImageSlideshowItem.swift */,
+				6395F3C2ABD45C11C139871AE5FA313C /* InputSource.swift */,
+				71C4EABC63A79ECA9DE81B06B88FEBF7 /* UIImage+AspectFit.swift */,
+				DCAEDD19B5C9A847985F6A33DAE65214 /* UIImageView+Tools.swift */,
+				BFF4547F76ECC8D3B869CF5427EAA5C5 /* ZoomAnimatedTransitioning.swift */,
+				192A7C8AEA91BE3D42D203ED4EAB185D /* Resources */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		AD8973E9992D6A24A8ECFC0F79DAA7D9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0521ADF65FE4D76F34E98B43D8D1EA86 /* ImageSlideshow.bundle */,
+				44E244123BCC9FA68B183F3EAD901BCD /* ImageSlideshow.framework */,
+				D5EA00B67A17DF9106E5C8E442B17AFB /* Pods_eCommerceAppTask.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B8761A95E23A97E20B435EE5C40C43E3 /* Pods-eCommerceAppTask */ = {
+			isa = PBXGroup;
+			children = (
+				C35A854728A76448F177E110C991B78E /* Info.plist */,
+				A2E9137B41D4B44B3FA5B0A2F4F33E5C /* Pods-eCommerceAppTask.modulemap */,
+				775C7113506171EB7776AE4EB8717DC6 /* Pods-eCommerceAppTask-acknowledgements.markdown */,
+				7B590B9C058BAB259BF889296EE1D4B9 /* Pods-eCommerceAppTask-acknowledgements.plist */,
+				367E2D06D4D6829DD69B5B42DA6DC353 /* Pods-eCommerceAppTask-dummy.m */,
+				19C1E9C4442E0545629F747D0DFC2484 /* Pods-eCommerceAppTask-frameworks.sh */,
+				1FD4F9C117236CDF5143AF6D92F4B952 /* Pods-eCommerceAppTask-resources.sh */,
+				F795F1AB2DB918A883DA94952FE7129A /* Pods-eCommerceAppTask-umbrella.h */,
+				42336ADCA5B20A20700F9EDF4C4E728D /* Pods-eCommerceAppTask.debug.xcconfig */,
+				6F179973B7561A953F67EC1562A60E27 /* Pods-eCommerceAppTask.release.xcconfig */,
+			);
+			name = "Pods-eCommerceAppTask";
+			path = "Target Support Files/Pods-eCommerceAppTask";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C64CB267B14EB5AC48CBC52A1BDB477F /* ImageSlideshow */ = {
+			isa = PBXGroup;
+			children = (
+				831E8DD93EE00C166081CE194E903ACB /* Core */,
+				EAEAC8C5B51E659F8F8F4E63DE182E88 /* Support Files */,
+			);
+			name = ImageSlideshow;
+			path = ImageSlideshow;
+			sourceTree = "<group>";
+		};
+		EAEAC8C5B51E659F8F8F4E63DE182E88 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C8B03054C808E6C76DC93C7C0D925873 /* ImageSlideshow.modulemap */,
+				9532083CE591AC110F9A88A7AA8EDFD2 /* ImageSlideshow.xcconfig */,
+				6A87D1CC7B1D704DF37BBC7B1D1D17F6 /* ImageSlideshow-dummy.m */,
+				51F3C8B8C642868A0F83A4F5DC5C677B /* ImageSlideshow-prefix.pch */,
+				A7B2A1B26EB5F6E4800F49A09D96C93E /* ImageSlideshow-umbrella.h */,
+				7DA12554B628246D1091D30EC9C5C301 /* Info.plist */,
+				4CE3C546248F10D88C3AC61AC9706304 /* ResourceBundle-ImageSlideshow-Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ImageSlideshow";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4A7036B091AEF514E53E59DE8AA1CA56 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8E74FCCC5C1334FA29AFC4A232CFDF8 /* Pods-eCommerceAppTask-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F74C129FB2B7B6773567672D87EFDF41 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5BB9F1AA7ABD290269FEC44B10BE3C0 /* ImageSlideshow-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1186FBCDC7ECA24C752793B535AC75D7 /* Pods-eCommerceAppTask */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B637619E1CD0C8B088FF90285320B516 /* Build configuration list for PBXNativeTarget "Pods-eCommerceAppTask" */;
+			buildPhases = (
+				D0B4E386DD183F94CDDA5EF4020EA39A /* Sources */,
+				2F28672F6B549D341884090380AEE08C /* Frameworks */,
+				4A7036B091AEF514E53E59DE8AA1CA56 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B1BE8AB0DA5720733350CE442E6209ED /* PBXTargetDependency */,
+			);
+			name = "Pods-eCommerceAppTask";
+			productName = "Pods-eCommerceAppTask";
+			productReference = D5EA00B67A17DF9106E5C8E442B17AFB /* Pods_eCommerceAppTask.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		854A358F694791FC141F75E15F82BB64 /* ImageSlideshow-ImageSlideshow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E7D02FCC3410B47B1FC8356738F640F8 /* Build configuration list for PBXNativeTarget "ImageSlideshow-ImageSlideshow" */;
+			buildPhases = (
+				2D555473ED5A8C622C11E9A9A6F13C5E /* Sources */,
+				4DBBCB869F090D7719B7BFE835D8E2D7 /* Frameworks */,
+				237721BC3EC349FC0E60AACB00C6B26D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ImageSlideshow-ImageSlideshow";
+			productName = "ImageSlideshow-ImageSlideshow";
+			productReference = 0521ADF65FE4D76F34E98B43D8D1EA86 /* ImageSlideshow.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		F1883A945C236CDCF166DE672D76F89C /* ImageSlideshow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E65D95660BD7A13AC1610DC39A3B1A4 /* Build configuration list for PBXNativeTarget "ImageSlideshow" */;
+			buildPhases = (
+				5301B5121413AA865A4ADA0434501C38 /* Sources */,
+				BEBFCF12E9E2C6B1B6034D71FF82736B /* Frameworks */,
+				E63A5408CEAAB0CD601B49D020E53066 /* Resources */,
+				F74C129FB2B7B6773567672D87EFDF41 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				726D2F87C26F6BC78C389597487B11B5 /* PBXTargetDependency */,
+			);
+			name = ImageSlideshow;
+			productName = ImageSlideshow;
+			productReference = 44E244123BCC9FA68B183F3EAD901BCD /* ImageSlideshow.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = AD8973E9992D6A24A8ECFC0F79DAA7D9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F1883A945C236CDCF166DE672D76F89C /* ImageSlideshow */,
+				854A358F694791FC141F75E15F82BB64 /* ImageSlideshow-ImageSlideshow */,
+				1186FBCDC7ECA24C752793B535AC75D7 /* Pods-eCommerceAppTask */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		237721BC3EC349FC0E60AACB00C6B26D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DA0405D7E26FA7ADCAC616A7F1BBA1B /* ic_cross_white@2x.png in Resources */,
+				0D50FD5AD018C87342F453178959C322 /* ic_cross_white@3x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E63A5408CEAAB0CD601B49D020E53066 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69611F626982620647F6D89534D158DB /* ImageSlideshow.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2D555473ED5A8C622C11E9A9A6F13C5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5301B5121413AA865A4ADA0434501C38 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7064C2B84F2D0B40A9EEA1D60BBF93E9 /* FullScreenSlideshowViewController.swift in Sources */,
+				28B67525A2F2A4C21575B04F79E6FB1D /* ImageSlideshow-dummy.m in Sources */,
+				9B2117AED969D6AB2F0E1D8552D9AC83 /* ImageSlideshow.swift in Sources */,
+				74FCD2CD233562CA059B4F591B495301 /* ImageSlideshowItem.swift in Sources */,
+				71361B18209728A71432598887137B7B /* InputSource.swift in Sources */,
+				E6FDED715B0F327DA62EC59EF9AA5AC8 /* UIImage+AspectFit.swift in Sources */,
+				185682DEDD998107C6DE8A01390C9D2F /* UIImageView+Tools.swift in Sources */,
+				340A2E53268508AFD17E72150E6B6BE4 /* ZoomAnimatedTransitioning.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0B4E386DD183F94CDDA5EF4020EA39A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CECBA7967B09A99DEB9E82613275D006 /* Pods-eCommerceAppTask-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		726D2F87C26F6BC78C389597487B11B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "ImageSlideshow-ImageSlideshow";
+			target = 854A358F694791FC141F75E15F82BB64 /* ImageSlideshow-ImageSlideshow */;
+			targetProxy = DA03B31FC8F77AA83D5303A424DB4870 /* PBXContainerItemProxy */;
+		};
+		B1BE8AB0DA5720733350CE442E6209ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ImageSlideshow;
+			target = F1883A945C236CDCF166DE672D76F89C /* ImageSlideshow */;
+			targetProxy = C49D297BD1ED40C8D7C9756647854110 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2F2F8B5A99AB9685021BE5CA830AC127 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F179973B7561A953F67EC1562A60E27 /* Pods-eCommerceAppTask.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-eCommerceAppTask/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-eCommerceAppTask/Pods-eCommerceAppTask.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_eCommerceAppTask;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4C655C162A4FFB028EC4533DD014B20D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9532083CE591AC110F9A88A7AA8EDFD2 /* ImageSlideshow.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ImageSlideshow";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/ImageSlideshow/ResourceBundle-ImageSlideshow-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = ImageSlideshow;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		58A5FCB0036EA592157D9FF5A0A6978B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42336ADCA5B20A20700F9EDF4C4E728D /* Pods-eCommerceAppTask.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-eCommerceAppTask/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-eCommerceAppTask/Pods-eCommerceAppTask.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_eCommerceAppTask;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		673254EEAF0B5BF4596080C749645884 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A3ECC9803CEA1AC77E05BEE2CD621563 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9532083CE591AC110F9A88A7AA8EDFD2 /* ImageSlideshow.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ImageSlideshow";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/ImageSlideshow/ResourceBundle-ImageSlideshow-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = ImageSlideshow;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		B5C8371B8CE65B262C62571BFB310CEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9532083CE591AC110F9A88A7AA8EDFD2 /* ImageSlideshow.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ImageSlideshow/ImageSlideshow-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ImageSlideshow/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ImageSlideshow/ImageSlideshow.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = ImageSlideshow;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E2B38E001F6BD0B178C9D51C60462E9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9532083CE591AC110F9A88A7AA8EDFD2 /* ImageSlideshow.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ImageSlideshow/ImageSlideshow-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ImageSlideshow/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ImageSlideshow/ImageSlideshow.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = ImageSlideshow;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E4F26E6EB105713A6A7E7E2E283AC2DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4F26E6EB105713A6A7E7E2E283AC2DF /* Debug */,
+				673254EEAF0B5BF4596080C749645884 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3E65D95660BD7A13AC1610DC39A3B1A4 /* Build configuration list for PBXNativeTarget "ImageSlideshow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2B38E001F6BD0B178C9D51C60462E9D /* Debug */,
+				B5C8371B8CE65B262C62571BFB310CEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B637619E1CD0C8B088FF90285320B516 /* Build configuration list for PBXNativeTarget "Pods-eCommerceAppTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58A5FCB0036EA592157D9FF5A0A6978B /* Debug */,
+				2F2F8B5A99AB9685021BE5CA830AC127 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E7D02FCC3410B47B1FC8356738F640F8 /* Build configuration list for PBXNativeTarget "ImageSlideshow-ImageSlideshow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C655C162A4FFB028EC4533DD014B20D /* Debug */,
+				A3ECC9803CEA1AC77E05BEE2CD621563 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
