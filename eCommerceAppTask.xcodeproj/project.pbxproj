@@ -19,6 +19,10 @@
 		1DB42E8C1E51BC4400D15F2D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DB42E8A1E51BC4400D15F2D /* LaunchScreen.storyboard */; };
 		1DB42E951E51CEC200D15F2D /* AddCategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB42E941E51CEC200D15F2D /* AddCategoriesViewController.swift */; };
 		1DB42E971E51D5EB00D15F2D /* AddProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB42E961E51D5EB00D15F2D /* AddProductViewController.swift */; };
+		1DBD41311E56ABC400B2F05A /* CartDB+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBD412F1E56ABC400B2F05A /* CartDB+CoreDataClass.swift */; };
+		1DBD41321E56ABC400B2F05A /* CartDB+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBD41301E56ABC400B2F05A /* CartDB+CoreDataProperties.swift */; };
+		1DBD41361E56AEB600B2F05A /* CartTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBD41351E56AEB600B2F05A /* CartTableViewController.swift */; };
+		1DBD41381E56AF1600B2F05A /* CartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBD41371E56AF1600B2F05A /* CartTableViewCell.swift */; };
 		1DC09FF61E52BD4500E262F8 /* DatabaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC09FF51E52BD4500E262F8 /* DatabaseController.swift */; };
 		1DC5B5071E5409DD00CC910B /* Level1CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC5B5061E5409DD00CC910B /* Level1CollectionViewCell.swift */; };
 		1DC5B5091E541FB300CC910B /* Level2CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC5B5081E541FB300CC910B /* Level2CollectionViewCell.swift */; };
@@ -47,6 +51,10 @@
 		1DB42E8D1E51BC4400D15F2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1DB42E941E51CEC200D15F2D /* AddCategoriesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddCategoriesViewController.swift; sourceTree = "<group>"; };
 		1DB42E961E51D5EB00D15F2D /* AddProductViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddProductViewController.swift; sourceTree = "<group>"; };
+		1DBD412F1E56ABC400B2F05A /* CartDB+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CartDB+CoreDataClass.swift"; sourceTree = "<group>"; };
+		1DBD41301E56ABC400B2F05A /* CartDB+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CartDB+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		1DBD41351E56AEB600B2F05A /* CartTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartTableViewController.swift; sourceTree = "<group>"; };
+		1DBD41371E56AF1600B2F05A /* CartTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartTableViewCell.swift; sourceTree = "<group>"; };
 		1DC09FF51E52BD4500E262F8 /* DatabaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseController.swift; sourceTree = "<group>"; };
 		1DC5B5061E5409DD00CC910B /* Level1CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Level1CollectionViewCell.swift; sourceTree = "<group>"; };
 		1DC5B5081E541FB300CC910B /* Level2CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Level2CollectionViewCell.swift; sourceTree = "<group>"; };
@@ -77,6 +85,8 @@
 		1D3D75791E52CFC70099E45F /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				1DBD412F1E56ABC400B2F05A /* CartDB+CoreDataClass.swift */,
+				1DBD41301E56ABC400B2F05A /* CartDB+CoreDataProperties.swift */,
 				1D3D757A1E52D3220099E45F /* CategoriesDB+CoreDataClass.swift */,
 				1D3D757B1E52D3220099E45F /* CategoriesDB+CoreDataProperties.swift */,
 				1D3D757C1E52D3220099E45F /* ProductsDB+CoreDataClass.swift */,
@@ -116,10 +126,11 @@
 				1DC5B50C1E5464DA00CC910B /* ProductDetailViewController.swift */,
 				1DC5B50E1E547B4F00CC910B /* SubCategoriesTableViewController.swift */,
 				1DC7F2471E5577E6004EDA20 /* ProductsCollectionViewController.swift */,
-				1DC09FF51E52BD4500E262F8 /* DatabaseController.swift */,
+				1DBD41351E56AEB600B2F05A /* CartTableViewController.swift */,
 				1DB42E821E51BC4400D15F2D /* Main.storyboard */,
 				1DB42E851E51BC4400D15F2D /* eCommerceAppTask.xcdatamodeld */,
 				1DC7F24E1E55CFF6004EDA20 /* CommonFunctions.swift */,
+				1DC09FF51E52BD4500E262F8 /* DatabaseController.swift */,
 			);
 			path = eCommerceAppTask;
 			sourceTree = "<group>";
@@ -140,6 +151,7 @@
 			children = (
 				1DC5B50A1E544A1500CC910B /* ProductsTableViewCell.swift */,
 				1DC5B5101E547C2C00CC910B /* SubCategoriestableViewCell.swift */,
+				1DBD41371E56AF1600B2F05A /* CartTableViewCell.swift */,
 			);
 			name = TableViewCells;
 			sourceTree = "<group>";
@@ -295,17 +307,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				1DB42E811E51BC4400D15F2D /* HomeViewController.swift in Sources */,
+				1DBD41361E56AEB600B2F05A /* CartTableViewController.swift in Sources */,
 				1D3D75811E52D3220099E45F /* ProductsDB+CoreDataProperties.swift in Sources */,
 				1DC5B50B1E544A1500CC910B /* ProductsTableViewCell.swift in Sources */,
 				1DC5B5091E541FB300CC910B /* Level2CollectionViewCell.swift in Sources */,
 				1DB42E7F1E51BC4400D15F2D /* AppDelegate.swift in Sources */,
+				1DBD41311E56ABC400B2F05A /* CartDB+CoreDataClass.swift in Sources */,
 				1DC5B50F1E547B4F00CC910B /* SubCategoriesTableViewController.swift in Sources */,
 				1DC09FF61E52BD4500E262F8 /* DatabaseController.swift in Sources */,
 				1DB42E971E51D5EB00D15F2D /* AddProductViewController.swift in Sources */,
+				1DBD41321E56ABC400B2F05A /* CartDB+CoreDataProperties.swift in Sources */,
 				1DC5B5071E5409DD00CC910B /* Level1CollectionViewCell.swift in Sources */,
 				1DB42E951E51CEC200D15F2D /* AddCategoriesViewController.swift in Sources */,
 				1DC5B50D1E5464DA00CC910B /* ProductDetailViewController.swift in Sources */,
 				1D3D757E1E52D3220099E45F /* CategoriesDB+CoreDataClass.swift in Sources */,
+				1DBD41381E56AF1600B2F05A /* CartTableViewCell.swift in Sources */,
 				1DC7F24A1E557881004EDA20 /* ProductsCollectionViewCell.swift in Sources */,
 				1DC7F24F1E55CFF6004EDA20 /* CommonFunctions.swift in Sources */,
 				1DC5B5111E547C2C00CC910B /* SubCategoriestableViewCell.swift in Sources */,

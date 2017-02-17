@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11759" systemVersion="16C67" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="CartDB" representedClassName="CartDB" syncable="YES">
+        <attribute name="productDesc" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="productName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="productPrice" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+    </entity>
     <entity name="CategoriesDB" representedClassName="CategoriesDB" syncable="YES">
         <attribute name="parentId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
@@ -11,7 +16,8 @@
         <attribute name="productPrice" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
     </entity>
     <elements>
-        <element name="CategoriesDB" positionX="-38" positionY="-712" width="128" height="73"/>
+        <element name="CategoriesDB" positionX="-38" positionY="-712" width="128" height="75"/>
         <element name="ProductsDB" positionX="153" positionY="-729" width="128" height="103"/>
+        <element name="CartDB" positionX="54" positionY="-522" width="128" height="90"/>
     </elements>
 </model>

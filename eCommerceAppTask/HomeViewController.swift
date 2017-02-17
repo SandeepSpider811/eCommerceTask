@@ -50,11 +50,25 @@ class HomeViewController: UIViewController {
         level2CategoriesFunctionCall = CommonFunctions.categoriesArrayForLevel2().0
         level2ParentIdFunctionCall = CommonFunctions.categoriesArrayForLevel2().1
         
+        //Navigatin bar color change
+        navigationController?.navigationBar.barTintColor = UIColor.black
+        navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
+        //collection number of cells
         let widthOfCollectionCell = (collectionViewLevel1Outlet.frame.width) / numberOfItemsPerRow
         let layout = collectionViewLevel1Outlet?.collectionViewLayout as? UICollectionViewFlowLayout
         layout?.itemSize = CGSize(width: widthOfCollectionCell, height: 90)
     }
 
+    
+    @IBAction func btnCart(_ sender: Any) {
+        if CommonFunctions.fetchingDataFromCartTab().0.count == 0 {
+            CommonFunctions.alertMessage(messageString: "Your cart is empty, Add some items", self)
+        }
+        else {
+            performSegue(withIdentifier: "CartSegue", sender: self)
+        }
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "productDetailSegueFromHomeViewController" {
             let guest = segue.destination as! ProductDetailViewController
@@ -64,7 +78,7 @@ class HomeViewController: UIViewController {
         } else if segue.identifier == "SubCategoriesTableViewController" {
             let guest = segue.destination as! SubCategoriesTableViewController
             guest.subCategoriesArray = selectedCategorySubCategoriesArray
-            guest.subCategoryParentId = selectedCategorySubCategoryParentId                 //MARK
+            guest.subCategoryParentId = selectedCategorySubCategoryParentId                 
         } else if segue.identifier == "ProductsSegue" {
             let guest = segue.destination as! ProductsCollectionViewController
             guest.productName = selectedCategoryProductsArray
@@ -97,6 +111,7 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
         }
         return UICollectionViewCell()
     }
+    
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if collectionView == collectionViewLevel1Outlet {
             selectedCategorySubCategoriesArray = CommonFunctions.categoriesInsidecategory(parentId: 0, categoryName: level1CategoriesFunctionCall[indexPath.row]).1

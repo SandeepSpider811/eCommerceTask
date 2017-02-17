@@ -7,7 +7,7 @@
 //
 import CoreData
 import Foundation
-
+import UIKit
 class CommonFunctions {
     
     //Fetching data from Categories Tab
@@ -71,7 +71,6 @@ class CommonFunctions {
 
     //check subcategory exist or not
     class func categoriesInsidecategory(parentId: Int64, categoryName: String) -> ([Int], [String]) {
-        print("Inside Func \(parentId) \(categoryName)")
         var subCategoriesArray = [String]()
         var subCategoriesParentIdArray = [Int]()
         var idOfSelectedCategory: Int = 0
@@ -112,4 +111,83 @@ class CommonFunctions {
         }
         return (level2Categories, level2ParentId)
     }
+    
+    //Inserting data into Cart
+    class func insertIntoCartDB(name: String, price: Float, desc: String){
+        let cartObj: CartDB = NSEntityDescription.insertNewObject(forEntityName: "CartDB", into: DatabaseController.getContext()) as! CartDB
+        cartObj.productName = name
+        cartObj.productDesc = desc
+        cartObj.productPrice = price
+        DatabaseController.saveContext()
+    }
+    
+    //Fetching data from products Tab
+    class func fetchingDataFromCartTab() -> ([String], [String], [Float]) {
+        var productsDescription = [String]()
+        var productName = [String]()
+        var productPrice = [Float]()
+        let fetchRequestForCartTab: NSFetchRequest<CartDB> = CartDB.fetchRequest()
+        do{
+            let searchResults = try DatabaseController.getContext().fetch(fetchRequestForCartTab)
+            for result in searchResults as [CartDB] {
+                productName.append(result.productName!)
+                productPrice.append(result.productPrice)
+                productsDescription.append(result.productDesc!)
+            }
+        } catch {
+            print("Error in fetching")
+        }
+        return (productName, productsDescription, productPrice)
+    }
+    
+    class func deleteProductFromCart(index: Int) {
+        let fetchRequestForCartTab: NSFetchRequest<CartDB> = CartDB.fetchRequest()
+        do {
+            let results = try DatabaseController.getContext().fetch(fetchRequestForCartTab)
+            let task = results[index]
+            DatabaseController.getContext().delete(task)
+            do {
+                try DatabaseController.getContext().save()
+                print("Item deleted")
+            } catch let error as NSError {
+                print("Could not save. \(error), \(error.userInfo)")
+            }
+        } catch let error as NSError {
+            print("Could not fetch. \(error), \(error.userInfo)")
+        }
+    }
+    
+    //Alert Message
+    class func alertMessage(messageString: String, _ selfArg: UIViewController) {
+        let alert = UIAlertController(title: "Oops!", message: messageString, preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil))
+        alert.addAction(UIAlertAction(title: "Cancel", style: UIAlertActionStyle.default, handler: {(action:UIAlertAction!) in print("you have pressed the Cancel button")
+        }))
+        selfArg.present(alert, animated: true, completion: nil)
+    }
+    
+    //getting products Array for sub Categories
+    class func returningProdArrays(prodCatName: String) -> ([String],[String],[Float]) {
+        var prodId: Int64 = 0
+        var prodNames = [String]()
+        var prodDescs = [String]()
+        var prodPrices = [Float]()
+        
+        for index in 0..<fetchingDataFromCategoriesTab().2.count {
+            if prodCatName == fetchingDataFromCategoriesTab().3[index] {
+                prodId = fetchingDataFromCategoriesTab().2[index]
+            }
+        }
+        if prodId != 0 {
+            for index in 0..<fetchingDataFromProductsTab().0.count {
+                if prodId == fetchingDataFromProductsTab().0[index] {
+                    prodNames.append(fetchingDataFromProductsTab().1[index])
+                    prodPrices.append(fetchingDataFromProductsTab().2[index])
+                    prodDescs.append(fetchingDataFromProductsTab().3[index])
+                }
+            }
+        }
+        return (prodNames, prodDescs, prodPrices)
+    }
+    
 }

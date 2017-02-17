@@ -56,19 +56,14 @@ class AddProductViewController: UIViewController {
     @IBAction func btnAddProductAction(_ sender: Any) {
         productName = txtFieldProductNameOutlet.text!
         categoryName = txtFieldCategoryNameOutlet.text!
-        productPrice = Float(txtFieldProductPriceOutlet.text!)!
+//        productPrice = Float(txtFieldProductPriceOutlet.text!)!
         productDescription = txtViewProductDescriptionOutlet.text!
-        
         var selectedCategoryIdIndex: Int = 0
         var selectedCategoryId: Int64 = 0
-        
-        if productName == "" || categoryName == "" || productPrice == 0 || productDescription == "" {
-            let alert = UIAlertController(title: "Oops!", message: "Something gone wrong", preferredStyle: UIAlertControllerStyle.alert)
-            alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil))
-            alert.addAction(UIAlertAction(title: "Cancel", style: UIAlertActionStyle.default, handler: {(action:UIAlertAction!) in print("you have pressed the Cancel button")
-            }))
-            self.present(alert, animated: true, completion: nil)
+        if productName == "" || categoryName == "" || productDescription == "" || txtFieldProductPriceOutlet.text == "" {
+            CommonFunctions.alertMessage(messageString: "Something gone wrong", self)
         } else {
+            productPrice = Float(txtFieldProductPriceOutlet.text!)!
             for cat in categoriesArray {
                 if txtFieldCategoryNameOutlet.text == cat {
                     selectedCategoryIdIndex = categoriesArray.index(of: txtFieldCategoryNameOutlet.text!)!
@@ -81,6 +76,7 @@ class AddProductViewController: UIViewController {
             productDBObj.productDesc = productDescription
             productDBObj.categoryId = selectedCategoryId
             DatabaseController.saveContext()
+            CommonFunctions.alertMessage(messageString: "You just added  \(productName)", self)
             //output try
             let fetchRequest: NSFetchRequest<ProductsDB> = ProductsDB.fetchRequest()
             do{

@@ -16,12 +16,16 @@ class SubCategoriesTableViewController: UITableViewController {
     var tempSubCatArray = [String]()
     var tempSubCatParentIdArray = [Int]()
     
-    var objHomeViewController = HomeViewController()
+    //selectedCategories Produc& price arrays if subcategories not exist
+    var selectedCategoryProductsArray = [String]()
+    var selectedCategoryProductPrice = [Float]()
+    var selectedCategoryProductDesc = [String]()
     
+    var level2ParentIdFunctionCall = [Int64]() //parent id for products
     override func viewDidLoad() {
         super.viewDidLoad()
-//        tempSubCatArray = objHomeViewController.categoriesInsidecategory(parentId: 0, categoryName: "Electronics").1
-//        print(tempSubCatArray)
+        print(CommonFunctions.fetchingDataFromCategoriesTab().2)
+        print(CommonFunctions.fetchingDataFromCategoriesTab().3)
     }
 
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -37,11 +41,33 @@ class SubCategoriesTableViewController: UITableViewController {
             fatalError()
         }
         cell.lblCategoryNamesOutlet.text = subCategoriesArray[indexPath.row]
-        
         return cell
     }
+    
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        tempSubCatArray = objHomeViewController.categoriesInsidecategory(parentId: Int64(subCategoryParentId[indexPath.row]), categoryName: subCategoriesArray[indexPath.row]).1
-//        tempSubCatParentIdArray = objHomeViewController.categoriesInsidecategory(parentId: Int64(subCategoryParentId[indexPath.row]), categoryName: subCategoriesArray[indexPath.row]).0
+        tempSubCatArray = CommonFunctions.categoriesInsidecategory(parentId: Int64(subCategoryParentId[indexPath.row]), categoryName: subCategoriesArray[indexPath.row]).1
+        tempSubCatParentIdArray = CommonFunctions.categoriesInsidecategory(parentId: Int64(subCategoryParentId[indexPath.row]), categoryName: subCategoriesArray[indexPath.row]).0
+        if tempSubCatArray == [] {
+            selectedCategoryProductsArray = CommonFunctions.returningProdArrays(prodCatName: subCategoriesArray[indexPath.row]).0
+            selectedCategoryProductDesc = CommonFunctions.returningProdArrays(prodCatName: subCategoriesArray[indexPath.row]).1
+            selectedCategoryProductPrice = CommonFunctions.returningProdArrays(prodCatName: subCategoriesArray[indexPath.row]).2
+            print(subCategoriesArray[indexPath.row])
+            if selectedCategoryProductDesc.count != 0 {
+                performSegue(withIdentifier: "subCategoryToProducts", sender: self)
+            }
+        } else {
+            subCategoriesArray = tempSubCatArray
+            subCategoryParentId = tempSubCatParentIdArray
+            self.tableView.reloadData()
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "subCategoryToProducts" {
+            let guest = segue.destination as! ProductsCollectionViewController
+            guest.productName = selectedCategoryProductsArray
+            guest.productPrice = selectedCategoryProductPrice
+            guest.productDesc = selectedCategoryProductDesc
+        }
     }
 }

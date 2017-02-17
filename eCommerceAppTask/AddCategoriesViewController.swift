@@ -48,11 +48,7 @@ class AddCategoriesViewController: UIViewController {
         
         categoryName = txtFieldCategoryNameOutlet.text!
         if categoryName == "" || txtFieldCategoryTypeOutlet.text == "" {
-            let alert = UIAlertController(title: "Oops!", message: "Something gone wrong", preferredStyle: UIAlertControllerStyle.alert)
-            alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil))
-            alert.addAction(UIAlertAction(title: "Cancel", style: UIAlertActionStyle.default, handler: {(action:UIAlertAction!) in print("you have pressed the Cancel button")
-            }))
-            self.present(alert, animated: true, completion: nil)
+            CommonFunctions.alertMessage(messageString: "Something gone wrong", self)
         } else if txtFieldCategoryTypeOutlet.text == "New Category" {
             parentIdDefault = 0
             insertIntoCoreData()
