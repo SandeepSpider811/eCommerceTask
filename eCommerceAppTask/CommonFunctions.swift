@@ -5,6 +5,7 @@
 //  Created by Sierra 4 on 16/02/17.
 //  Copyright © 2017 Sierra 4. All rights reserved.
 //
+import Spring
 import CoreData
 import Foundation
 import UIKit
@@ -165,7 +166,7 @@ class CommonFunctions {
         }))
         selfArg.present(alert, animated: true, completion: nil)
     }
-    
+
     //getting products Array for sub Categories
     class func returningProdArrays(prodCatName: String) -> ([String],[String],[Float]) {
         var prodId: Int64 = 0

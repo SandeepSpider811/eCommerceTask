@@ -506,6 +506,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="btnCartOutlet" destination="BTj-ld-iRE" id="z2h-2L-PIs"/>
                         <outlet property="collectionViewLevel1Outlet" destination="Xfv-JV-HRR" id="igp-Ss-sbJ"/>
                         <outlet property="collectionViewLevel2Outlet" destination="4TQ-6e-xjb" id="cwX-pY-jKW"/>
                         <outlet property="imageSlideShowOutlet" destination="x2R-2X-dlq" id="tA1-Vg-rkX"/>
@@ -1045,7 +1046,7 @@
                                 <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GbF-mN-Lai" id="Ncy-g8-M1W">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jbT-s4-LR4">

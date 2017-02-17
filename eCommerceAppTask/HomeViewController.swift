@@ -5,6 +5,7 @@
 //  Created by Sierra 4 on 13/02/17.
 //  Copyright © 2017 Sierra 4. All rights reserved.
 //
+import Spring
 import CoreData
 import ImageSlideshow
 import UIKit
@@ -16,7 +17,9 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var collectionViewLevel1Outlet: UICollectionView!
     
     @IBOutlet weak var collectionViewLevel2Outlet: UICollectionView!
-
+    
+    @IBOutlet weak var btnCartOutlet: UIButton!
+    
     //Dictionary to send data to detailview of product
     var dataToproductDetail = [String : String]()
     //selectedCategories Produc& price arrays if subcategories not exist
@@ -61,6 +64,16 @@ class HomeViewController: UIViewController {
 
     
     @IBAction func btnCart(_ sender: Any) {
+        btnCartOutlet.transform = CGAffineTransform(scaleX: 0.1, y: 0.1)
+        UIView.animate(withDuration: 2.0,
+                       delay: 0,
+                       usingSpringWithDamping: 0.2,
+                       initialSpringVelocity: 6.0,
+                       options: .allowUserInteraction,
+                       animations: { [weak self] in
+                        self?.btnCartOutlet.transform = .identity
+            },
+                       completion: nil)
         if CommonFunctions.fetchingDataFromCartTab().0.count == 0 {
             CommonFunctions.alertMessage(messageString: "Your cart is empty, Add some items", self)
         }

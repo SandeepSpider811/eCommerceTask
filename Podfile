@@ -6,5 +6,5 @@ target 'eCommerceAppTask' do
   use_frameworks!
 
   pod 'ImageSlideshow', '~> 1.0'
-
+  pod 'Spring', :git => 'https://github.com/MengTo/Spring.git', :branch => 'swift3'
 end
