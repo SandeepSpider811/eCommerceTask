@@ -38,7 +38,6 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         //imageSlider
         imageSlideShowOutlet.setImageInputs([ImageSource(image: UIImage(named: "levis")!),
                                              ImageSource(image: UIImage(named: "asus")!),
@@ -54,7 +53,7 @@ class HomeViewController: UIViewController {
         level2ParentIdFunctionCall = CommonFunctions.categoriesArrayForLevel2().1
         
         //Navigatin bar color change
-        navigationController?.navigationBar.barTintColor = UIColor.black
+        navigationController?.navigationBar.barTintColor = UIColor.darkGray
         navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
         //collection number of cells
         let widthOfCollectionCell = (collectionViewLevel1Outlet.frame.width) / numberOfItemsPerRow
@@ -64,7 +63,7 @@ class HomeViewController: UIViewController {
 
     
     @IBAction func btnCart(_ sender: Any) {
-        btnCartOutlet.transform = CGAffineTransform(scaleX: 0.1, y: 0.1)
+        btnCartOutlet.transform = CGAffineTransform(scaleX: 0.2, y: 0.2)
         UIView.animate(withDuration: 2.0,
                        delay: 0,
                        usingSpringWithDamping: 0.2,
@@ -79,6 +78,7 @@ class HomeViewController: UIViewController {
         }
         else {
             performSegue(withIdentifier: "CartSegue", sender: self)
+            dismiss(animated: true, completion: nil)
         }
     }
     

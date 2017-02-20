@@ -5,7 +5,6 @@
 //  Created by Sierra 4 on 16/02/17.
 //  Copyright © 2017 Sierra 4. All rights reserved.
 //
-import Spring
 import CoreData
 import Foundation
 import UIKit
@@ -162,7 +161,7 @@ class CommonFunctions {
     class func alertMessage(messageString: String, _ selfArg: UIViewController) {
         let alert = UIAlertController(title: "Oops!", message: messageString, preferredStyle: UIAlertControllerStyle.alert)
         alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil))
-        alert.addAction(UIAlertAction(title: "Cancel", style: UIAlertActionStyle.default, handler: {(action:UIAlertAction!) in print("you have pressed the Cancel button")
+        alert.addAction(UIAlertAction(title: "Cancel", style: UIAlertActionStyle.destructive, handler: {(action:UIAlertAction!) in print("you have pressed the Cancel button")
         }))
         selfArg.present(alert, animated: true, completion: nil)
     }

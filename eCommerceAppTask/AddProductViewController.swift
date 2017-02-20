@@ -56,7 +56,6 @@ class AddProductViewController: UIViewController {
     @IBAction func btnAddProductAction(_ sender: Any) {
         productName = txtFieldProductNameOutlet.text!
         categoryName = txtFieldCategoryNameOutlet.text!
-//        productPrice = Float(txtFieldProductPriceOutlet.text!)!
         productDescription = txtViewProductDescriptionOutlet.text!
         var selectedCategoryIdIndex: Int = 0
         var selectedCategoryId: Int64 = 0
